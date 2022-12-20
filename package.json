@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css --watch",
-    "dev:start": "sleep 5 && vite",
+    "dev:start": "sleep 5 && vite --host",
     "dev": "run-p watch:css dev:start",
     "build": "run-s build:css vite build",
     "preview": "vite preview"
